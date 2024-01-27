@@ -1,0 +1,27 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 8px;
+  margin-bottom: 16px;
+  color: gray;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 0.5px grey;
+}
+
+.link:hover {
+  color: rgb(229, 129, 75);
+}
+
+.movieWrap {
+  display: flex;
+  gap: 20px;
+}
+
+.year {
+  color: rgb(229, 129, 75);
+  font-weight: 600;
+}
