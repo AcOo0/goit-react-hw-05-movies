@@ -1,3 +1,5 @@
+import { Link, Outlet } from "react-router-dom";
+
 import SingleMovie from "components/SingleMovie/SingleMovie";
 
 import styles from "./movies-details-page.module.css"
@@ -7,7 +9,8 @@ const MoviesDetailsPage = () => {
 
     return (
         <div>
-            <SingleMovie/>
+            <SingleMovie />
+
         </div>
     )
 }

@@ -24,7 +24,7 @@ export const searchMovies = (query, page = 1) => {
     })
 }
 
-export const getMovieDetail = (id) => {
+export const getMovieDetail = id => {
     return instance.get(`/movie/${id}`, {
         params: {
             api_key: API_KEY,
@@ -32,7 +32,7 @@ export const getMovieDetail = (id) => {
     })
 }
 
-export const getMovieCredits = (id) => {
+export const getMovieCredits = id => {
     return instance.get(`/movie/${id}/credits`, {
         params: {
             api_key: API_KEY,
@@ -40,7 +40,7 @@ export const getMovieCredits = (id) => {
     })
 }
 
-export const getMovieReview = (id) => {
+export const getMovieReview = id => {
     return instance.get(`/movie/${id}/reviews`, {
         params: {
             api_key: API_KEY,

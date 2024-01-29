@@ -1,19 +1,22 @@
-.link {
+.btn {
   display: inline-flex;
   align-items: center;
   gap: 4px;
   padding: 8px 8px;
   margin-bottom: 16px;
-  color: gray;
+  color: rgb(255, 255, 255);
+  background-color: rgb(229, 129, 75);
   text-decoration: none;
   font-weight: 500;
   text-transform: uppercase;
-  border-radius: 5px;
+  border: none;
+  border-radius: 8px;
   box-shadow: 1px 1px 1px 0.5px grey;
 }
 
-.link:hover {
+.btn:hover {
   color: rgb(229, 129, 75);
+  background-color: rgb(255, 255, 255);
 }
 
 .movieWrap {
@@ -24,4 +27,9 @@
 .year {
   color: rgb(229, 129, 75);
   font-weight: 600;
+}
+
+.linkWrap {
+  display: flex;
+  gap: 20px;
 }
