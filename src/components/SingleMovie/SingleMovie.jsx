@@ -1,4 +1,4 @@
-import { Suspense, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link, Outlet, useParams, useNavigate, useLocation } from "react-router-dom";
 
 import { getMovieDetail } from "api/movies";
