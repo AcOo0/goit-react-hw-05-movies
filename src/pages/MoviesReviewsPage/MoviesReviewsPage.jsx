@@ -32,7 +32,7 @@ const MovieReviewPage = () => {
         }
 
         fetchReview();
-    }, []);
+    }, [id]);
 
     if (review.length === 0) {
                     return <p>Sorry we don't have any reviews for this movie!</p>;

@@ -36,7 +36,7 @@ const SingleMovie = () => {
         }
 
         fetchMovie();
-    }, []);
+    }, [id, error]);
 
     const {
         poster_path,

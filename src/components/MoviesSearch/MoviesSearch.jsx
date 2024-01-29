@@ -61,8 +61,7 @@ const MoviesSearch = () => {
     const loadMore = () => setSearchParams({ search, page: Number(page) + 1 });
 
     const isImages = Boolean(results.length);
-    console.log(results);
-        
+    
         return (
             <>
                 <Searchbar onSubmit={handleSearch} />
