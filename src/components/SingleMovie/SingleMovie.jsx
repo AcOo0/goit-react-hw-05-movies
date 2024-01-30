@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { Link, Outlet, useParams, useNavigate, useLocation } from "react-router-dom";
 
 import { getMovieDetail } from "api/movies";
@@ -79,7 +79,9 @@ const SingleMovie = () => {
                             <Link to="cast" state={{ from: from }}>Cast</Link>
                             <Link to="reviews" state={{ from: from }}>Reviews</Link>
                         </div>
-                            <Outlet />                     
+                        <Suspense>
+                            <Outlet /> 
+                        </Suspense>                                                
                     </div>
                 </>
             )}

@@ -18,14 +18,14 @@ const Searchbar = ({ onSubmit }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         onSubmit({ ...state });
-        reset();
+        // reset();
     };
 
-    const reset = () => {
-        setState({ 
-            search: "",
-        });
-    };
+    // const reset = () => {
+    //     setState({ 
+    //         search: "",
+    //     });
+    // };
 
     return (
             <header className={styles.searchbar}>
